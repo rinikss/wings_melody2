@@ -1,0 +1,448 @@
+html,
+body {
+  width: 100%;
+  margin: 0%;
+  overflow-x: hidden;
+}
+section,
+.block1 {
+  width: 100%;
+  height: 862px;
+}
+
+.ww {
+  position: absolute;
+  margin-left: 17.29%;
+  margin-top: 5.07%;
+}
+.ii {
+  position: absolute;
+  margin-left: 23.82%;
+  margin-top: 5.35%;
+}
+.nn {
+  position: absolute;
+  margin-left: 28.96%;
+  margin-top: 5.35%;
+}
+.gg {
+  position: absolute;
+  margin-left: 35.14%;
+  margin-top: 5.69%;
+}
+.ss {
+  position: absolute;
+  margin-left: 40.14%;
+  margin-top: 4.58%;
+}
+.mm {
+  position: absolute;
+  margin-left: 47.99%;
+  margin-top: 4.93%;
+}
+.ee {
+  position: absolute;
+  margin-left: 55%;
+  margin-top: 4.86%;
+}
+.ll {
+  position: absolute;
+  margin-left: 60.35%;
+  margin-top: 4.58%;
+}
+.oo {
+  position: absolute;
+  margin-left: 65.76%;
+  margin-top: 4.86%;
+}
+.dd {
+  position: absolute;
+  margin-left: 71.11%;
+  margin-top: 4.58%;
+}
+.yy {
+  position: absolute;
+  margin-left: 75.97%;
+  margin-top: 4.51%;
+}
+
+.ww,
+.ii,
+.nn,
+.gg,
+.ss,
+.mm,
+.ee,
+.ll,
+.oo,
+.dd,
+.yy {
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+.ww {
+  animation: jitter-ww 1.6s infinite;
+  animation-delay: 0s;
+}
+.ii {
+  animation: jitter-ii 1.8s infinite;
+  animation-delay: 0.1s;
+}
+.nn {
+  animation: jitter-nn 1.7s infinite;
+  animation-delay: 0.2s;
+}
+.gg {
+  animation: jitter-gg 1.9s infinite;
+  animation-delay: 0.3s;
+}
+.ss {
+  animation: jitter-ss 1.6s infinite;
+  animation-delay: 0.15s;
+}
+.mm {
+  animation: jitter-mm 2s infinite;
+  animation-delay: 0.25s;
+}
+.ee {
+  animation: jitter-ee 1.7s infinite;
+  animation-delay: 0.05s;
+}
+.ll {
+  animation: jitter-ll 1.8s infinite;
+  animation-delay: 0.35s;
+}
+.oo {
+  animation: jitter-oo 1.9s infinite;
+  animation-delay: 0.18s;
+}
+.dd {
+  animation: jitter-dd 1.6s infinite;
+  animation-delay: 0.28s;
+}
+.yy {
+  animation: jitter-yy 2.1s infinite;
+  animation-delay: 0.12s;
+}
+
+.ww:hover,
+.ii:hover,
+.nn:hover,
+.gg:hover,
+.ss:hover,
+.mm:hover,
+.ee:hover,
+.ll:hover,
+.oo:hover,
+.dd:hover,
+.yy:hover {
+  animation-play-state: paused;
+}
+
+@keyframes jitter-ww {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-2px, 1px) rotate(-0.3deg);
+  }
+  50% {
+    transform: translate(2px, -1px) rotate(0.4deg);
+  }
+  75% {
+    transform: translate(-1px, -2px) rotate(0.2deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes jitter-ii {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+    transform: translate(2px, -1px) rotate(-0.4deg);
+  }
+  40% {
+    transform: translate(-1px, 2px) rotate(0.3deg);
+  }
+  60% {
+    transform: translate(-2px, -1px) rotate(0.2deg);
+  }
+  80% {
+    transform: translate(1px, 1px) rotate(-0.3deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes jitter-nn {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  15% {
+    transform: translate(-1px, 2px) rotate(0.3deg);
+  }
+  35% {
+    transform: translate(2px, 1px) rotate(-0.4deg);
+  }
+  55% {
+    transform: translate(-2px, -1px) rotate(0.2deg);
+  }
+  75% {
+    transform: translate(1px, -2px) rotate(-0.3deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes jitter-gg {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  18% {
+    transform: translate(2px, 2px) rotate(0.4deg);
+  }
+  36% {
+    transform: translate(-2px, 1px) rotate(-0.5deg);
+  }
+  54% {
+    transform: translate(1px, -2px) rotate(0.2deg);
+  }
+  72% {
+    transform: translate(-1px, -1px) rotate(0.3deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes jitter-ss {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  22% {
+    transform: translate(-2px, 1px) rotate(-0.2deg);
+  }
+  44% {
+    transform: translate(1px, -2px) rotate(0.3deg);
+  }
+  66% {
+    transform: translate(2px, 1px) rotate(-0.4deg);
+  }
+  88% {
+    transform: translate(-1px, 2px) rotate(0.2deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes jitter-mm {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+    transform: translate(1px, -2px) rotate(0.4deg);
+  }
+  40% {
+    transform: translate(-2px, 2px) rotate(-0.5deg);
+  }
+  60% {
+    transform: translate(2px, 1px) rotate(0.3deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(-0.2deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes jitter-ee {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  24% {
+    transform: translate(-1px, 2px) rotate(-0.3deg);
+  }
+  48% {
+    transform: translate(2px, -1px) rotate(0.4deg);
+  }
+  72% {
+    transform: translate(-2px, 1px) rotate(-0.2deg);
+  }
+  96% {
+    transform: translate(1px, -2px) rotate(0.3deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes jitter-ll {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+    transform: translate(2px, 1px) rotate(-0.3deg);
+  }
+  40% {
+    transform: translate(-1px, -2px) rotate(0.4deg);
+  }
+  60% {
+    transform: translate(1px, 2px) rotate(-0.2deg);
+  }
+  80% {
+    transform: translate(-2px, 1px) rotate(0.3deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes jitter-oo {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  18% {
+    transform: translate(-2px, -1px) rotate(0.4deg);
+  }
+  36% {
+    transform: translate(2px, 2px) rotate(-0.5deg);
+  }
+  54% {
+    transform: translate(-1px, 1px) rotate(0.2deg);
+  }
+  72% {
+    transform: translate(1px, -2px) rotate(0.3deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes jitter-dd {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  22% {
+    transform: translate(1px, 2px) rotate(-0.4deg);
+  }
+  44% {
+    transform: translate(-2px, -1px) rotate(0.3deg);
+  }
+  66% {
+    transform: translate(2px, 1px) rotate(-0.2deg);
+  }
+  88% {
+    transform: translate(-1px, -2px) rotate(0.3deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes jitter-yy {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+    transform: translate(-2px, 2px) rotate(0.4deg);
+  }
+  40% {
+    transform: translate(2px, -1px) rotate(-0.5deg);
+  }
+  60% {
+    transform: translate(-1px, 1px) rotate(0.3deg);
+  }
+  80% {
+    transform: translate(1px, -2px) rotate(-0.2deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+.raven1 {
+  position: absolute;
+  width: 100%;
+  height: 489px;
+  margin-left: -660px;
+  margin-top: 431px;
+  animation: tilt-down-up 2s infinite ease-in-out;
+  transform-origin: center bottom;
+}
+@keyframes tilt-down-up {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg); /* наклон вниз */
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(10deg); /* наклон вверх */
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.raven2 {
+  width: 100%;
+  height: 489px;
+
+  animation: tilt-down-up 2s infinite ease-in-out;
+  transform-origin: center bottom;
+}
+
+/* .ww:hover {
+  animation-play-state: paused;
+  background-image: url("/img/red_w.svg");
+}
+.ii:hover {
+  animation-play-state: paused;
+  background-image: url("/img/red_i.svg");
+}
+.nn:hover {
+  animation-play-state: paused;
+  background-image: url("/img/red_n.svg");
+}
+.gg:hover {
+  animation-play-state: paused;
+  background-image: url("/img/red_g.svg");
+}
+.ss:hover {
+  animation-play-state: paused;
+  background-image: url("/img/red_s.svg");
+}
+.mm:hover {
+  animation-play-state: paused;
+  background-image: url("/img/red_m.svg");
+}
+.ee:hover {
+  animation-play-state: paused;
+  background-image: url("/img/red_e.svg");
+}
+.ll:hover {
+  animation-play-state: paused;
+  background-image: url("/img/red_l.svg");
+}
+.oo:hover {
+  animation-play-state: paused;
+  background-image: url("/img/red_o.svg");
+}
+.dd:hover {
+  animation-play-state: paused;
+  background-image: url("/img/red_d.svg");
+}
+.yy:hover {
+  animation-play-state: paused;
+  background-image: url("/img/red_y.svg");
+} */
