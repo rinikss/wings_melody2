@@ -406,33 +406,22 @@ section,
   animation: down-up 2s infinite ease-in-out;
   transform-origin: center bottom;
 }
-.micro-anim,
-.micro-img {
+
+.animation_m {
   position: absolute;
-  width: 206px;
-  height: 486px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  animation: micro-swap 1s steps(5) infinite;
+  margin-top: 305px;
+  margin-left: 477px;
+  width: 486px;
+  height: 512px;
+  background-image: url(../img/Frame_176.svg);
+
+  animation: frameChange 2s steps(5) infinite;
 }
-@keyframes micro-swap {
+@keyframes frameChange {
   0% {
-    background-image: url(/img/1.svg);
-  }
-  20% {
-    background-image: url(/img/2.svg);
-  }
-  40% {
-    background-image: url(/img/3.svg);
-  }
-  60% {
-    background-image: url(/img/4.svg);
-  }
-  80% {
-    background-image: url(/img/5.svg);
+    background-position: 0 0;
   }
   100% {
-    background-image: url(/img/5.svg);
+    background-position: -2430px 0;
   }
 }
