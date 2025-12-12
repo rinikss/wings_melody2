@@ -451,12 +451,10 @@ section,
 }
 
 .tracks:hover {
-  animation-play-state: paused;
   background-image: url(../img/Frame_179_red.svg);
 }
 
 .tracks_up:hover {
-  animation-play-state: paused;
   background-image: url(../img/Frame_180_red.svg);
 }
 
@@ -551,10 +549,18 @@ section,
   animation: blink 0.6s ease-in-out infinite, tilt_2 0.5s linear infinite;
 }
 
-/* .flckr_1,
+.flckr_1:hover {
+  animation: blink 0.6s ease-in-out infinite, pulse 0.6s ease-in-out infinite;
+}
 .flckr_2:hover {
   animation: blink 0.6s ease-in-out infinite, pulse 0.6s ease-in-out infinite;
-} */
+}
+.flckr_3:hover {
+  animation: blink 0.6s ease-in-out infinite, pulse 0.6s ease-in-out infinite;
+}
+.flckr_4:hover {
+  animation: blink 0.6s ease-in-out infinite, pulse 0.6s ease-in-out infinite;
+}
 
 @keyframes blink {
   0%,
@@ -582,6 +588,15 @@ section,
   }
   50% {
     transform: rotate(-5deg);
+  }
+}
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
   }
 }
 
