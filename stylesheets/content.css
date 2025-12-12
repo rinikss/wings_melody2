@@ -1,8 +1,10 @@
 html,
 body {
   width: 100%;
-  margin: 0%;
+  margin: 0;
   overflow-x: hidden;
+  padding: 0;
+  height: 100%;
 }
 section,
 .block1 {
@@ -402,7 +404,7 @@ section,
   width: 100%;
   height: 489px;
   margin-left: 660px;
-  margin-top: 224px;
+  margin-top: 180px;
   animation: down-up 2s infinite ease-in-out;
   transform-origin: center bottom;
 }
@@ -425,3 +427,296 @@ section,
     background-position: -2430px 0;
   }
 }
+
+.tracks {
+  position: absolute;
+  margin-top: 552px;
+  margin-left: 959px;
+  width: 476px;
+  height: 302px;
+  background-image: url(../img/Frame_178.svg);
+  animation: tracksanim 5s steps(7) infinite,
+    tracksfade 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.tracks_up {
+  position: absolute;
+  margin-right: 1049px;
+  margin-bottom: 447px;
+  width: 387px;
+  height: 413px;
+  background-image: url(../img/Frame_170_blck.svg);
+  animation: tracksanim_up 5s steps(7) infinite,
+    tracksfade_up 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.tracks:hover {
+  animation-play-state: paused;
+  background-image: url(../img/Frame_179_red.svg);
+}
+
+.tracks_up:hover {
+  animation-play-state: paused;
+  background-image: url(../img/Frame_180_red.svg);
+}
+
+@keyframes tracksanim {
+  0% {
+    background-position: -3332px 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes tracksanim_up {
+  0% {
+    background-position: -2709px 0;
+  }
+  50% {
+    background-position: -2709px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes tracksfade {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes tracksfade_up {
+  0% {
+    opacity: 0;
+  }
+  42% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.flckr_1 {
+  position: absolute;
+  width: 125px;
+  height: 89px;
+  margin-top: 260.63px;
+  margin-left: 503.03px;
+  animation: blink 0.6s ease-in-out infinite, tilt 0.5s linear infinite;
+}
+.flckr_2 {
+  position: absolute;
+  width: 125px;
+  height: 90px;
+  margin-top: 240px;
+  margin-left: 796.45px;
+  animation: blink 0.6s ease-in-out infinite, tilt_2 0.5s linear infinite;
+}
+.flckr_3 {
+  position: absolute;
+  width: 90px;
+  height: 125px;
+  margin-top: 450px;
+  margin-left: 838px;
+  animation: blink 0.6s ease-in-out infinite, tilt 0.5s linear infinite;
+}
+.flckr_4 {
+  position: absolute;
+  width: 90px;
+  height: 125px;
+  margin-top: 462px;
+  margin-left: 515px;
+  animation: blink 0.6s ease-in-out infinite, tilt_2 0.5s linear infinite;
+}
+
+/* .flckr_1,
+.flckr_2:hover {
+  animation: blink 0.6s ease-in-out infinite, pulse 0.6s ease-in-out infinite;
+} */
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes tilt {
+  0%,
+  100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+@keyframes tilt_2 {
+  0%,
+  100% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+}
+
+/* @keyframes tracksfade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes tracksfade_up {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+/* .tracks {
+  position: absolute;
+  margin-top: 552px;
+  margin-left: 959px;
+  width: 476px;
+  height: 302px;
+  background-image: url(../img/Frame_178.svg);
+}
+.tracks {
+  animation: tracksanim 4s steps(6) infinite tracksfade 4s
+    cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.tracks_up {
+  position: absolute;
+  margin-right: 1049px;
+  margin-bottom: 447px;
+  width: 387px;
+  height: 413px;
+  background-image: url(../img/Frame_170_blck.svg);
+}
+.tracks_up {
+  animation: tracksanim_up 4s steps(6) infinite tracksfade_up 4s
+    cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.tracks:hover {
+  animation-play-state: paused;
+  background-image: url(../img/Frame_179_red.svg);
+}
+.tracks_up:hover {
+  animation-play-state: paused;
+  background-image: url(../img/Frame_180_red.svg);
+}
+
+@keyframes tracksanim {
+  0% {
+    background-position: -2856px 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes tracksanim_up {
+  0% {
+    background-position: -2322px 0;
+  }
+  50% {
+    background-position: -2322px 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes tracksfade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes tracksfade_up {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+/* @keyframes tracksanim {
+  0% {
+    background-position: -2856px 0;
+    opacity: 0;
+  }
+  50% {
+    background-position: 0 0;
+    opacity: 1;
+  }
+
+  100% {
+    background-position: 0 0;
+    opacity: 0;
+  }
+}
+
+@keyframes tracksanim_up {
+  0% {
+    background-position: -2322px 0;
+    opacity: 0;
+  }
+  50% {
+    background-position: -2322px 0;
+    opacity: 0;
+  }
+
+  100% {
+    background-position: 0 0;
+    opacity: 1;
+  }
+} */
