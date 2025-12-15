@@ -6,7 +6,7 @@ body {
   padding: 0;
   height: 100%;
 }
-section,
+
 .block1 {
   width: 100%;
   height: 862px;
@@ -599,139 +599,132 @@ section,
     transform: scale(1.08);
   }
 }
-
-/* @keyframes tracksfade {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes tracksfade_up {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
-
-/* .tracks {
+.stroke {
   position: absolute;
-  margin-top: 552px;
-  margin-left: 959px;
-  width: 476px;
-  height: 302px;
-  background-image: url(../img/Frame_178.svg);
+  width: 100%;
+  height: 288px;
+  background-color: #161a1d;
+  overflow: hidden;
 }
-.tracks {
-  animation: tracksanim 4s steps(6) infinite tracksfade 4s
-    cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-.tracks_up {
+.polygon_line {
   position: absolute;
-  margin-right: 1049px;
-  margin-bottom: 447px;
-  width: 387px;
-  height: 413px;
-  background-image: url(../img/Frame_170_blck.svg);
+  margin-top: 26px;
+  width: 100%;
+  height: 100px;
+
+  background-image: url(../img/polygon_line.svg);
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  animation: move_left 12s linear infinite;
+  transition: animation 0.3s ease;
 }
-.tracks_up {
-  animation: tracksanim_up 4s steps(6) infinite tracksfade_up 4s
-    cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-.tracks:hover {
-  animation-play-state: paused;
-  background-image: url(../img/Frame_179_red.svg);
-}
-.tracks_up:hover {
-  animation-play-state: paused;
-  background-image: url(../img/Frame_180_red.svg);
+.polygon_line2 {
+  position: absolute;
+  margin-top: 162px;
+  width: 100%;
+  height: 100px;
+  background-image: url(../img/polygon_line2.svg);
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  animation: move_right 12s linear infinite;
+  transition: animation 0.3s ease;
 }
 
-@keyframes tracksanim {
+.stroke:hover .polygon_line {
+  animation: move_right 12s linear infinite;
+}
+
+.stroke:hover .polygon_line2 {
+  animation: move_left 12s linear infinite;
+}
+
+@keyframes move_left {
   0% {
-    background-position: -2856px 0;
-  }
-  50% {
     background-position: 0 0;
   }
-
   100% {
+    background-position: -100% 0;
+  }
+}
+
+@keyframes move_right {
+  0% {
     background-position: 0 0;
   }
-}
-
-@keyframes tracksanim_up {
-  0% {
-    background-position: -2322px 0;
-  }
-  50% {
-    background-position: -2322px 0;
-  }
-
   100% {
-    background-position: 0 0;
+    background-position: 100% 0;
   }
 }
-@keyframes tracksfade {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+.block2 {
+  position: absolute;
+  margin-top: 288px;
+  width: 100%;
+  height: 576px;
 }
-@keyframes tracksfade_up {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.corob {
+  position: absolute;
+  width: 288px;
+  height: 576px;
+  background-color: #ffd449;
+}
+/* .disk_top {
+  position: absolute;
+  margin-left: 42px;
+  margin-top: 187px;
+  width: 203px;
+  height: 102px;
+}
+.disk_bttm {
+  position: absolute;
+  margin-left: 42px;
+  margin-top: 288px;
+  width: 203px;
+  height: 102px;
 } */
-/* @keyframes tracksanim {
-  0% {
-    background-position: -2856px 0;
-    opacity: 0;
+.disk_top {
+  position: absolute;
+  margin-left: 42px;
+  margin-top: 187px;
+  width: 203px;
+  height: 102px;
+
+  animation: move-up 3s ease-in-out infinite;
+}
+
+.disk_bttm {
+  position: absolute;
+  margin-left: 42px;
+  margin-top: 288px;
+  width: 203px;
+  height: 102px;
+
+  animation: move-down 3s ease-in-out infinite;
+}
+
+@keyframes move-up {
+  0%,
+  100% {
+    transform: translateY(0);
   }
   50% {
-    background-position: 0 0;
-    opacity: 1;
-  }
-
-  100% {
-    background-position: 0 0;
-    opacity: 0;
+    transform: translateY(-50px); /* верхний движется вверх (разъезжаются) */
   }
 }
 
-@keyframes tracksanim_up {
-  0% {
-    background-position: -2322px 0;
-    opacity: 0;
+@keyframes move-down {
+  0%,
+  100% {
+    transform: translateY(0);
   }
   50% {
-    background-position: -2322px 0;
-    opacity: 0;
+    transform: translateY(50px); /* нижний движется вниз (разъезжаются) */
   }
+}
 
-  100% {
-    background-position: 0 0;
-    opacity: 1;
-  }
-} */
+.disk_black {
+  position: absolute;
+  margin-left: 42px;
+  margin-top: 121px;
+  width: 203px;
+  height: 102px;
+}
