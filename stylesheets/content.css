@@ -3,7 +3,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-
+  cursor: url(../img/elipse_cursor.png);
   position: relative;
   overflow-x: hidden;
 }
