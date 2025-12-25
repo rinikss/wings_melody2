@@ -564,17 +564,17 @@ body {
 }
 .flckr_1 {
   position: absolute;
-  width: 8.68vw;
-  height: 6.18vw;
+  width: 9vw;
+  height: 6vw;
   margin-top: 16vw;
-  margin-left: 34.93vw;
+  margin-left: 35vw;
   animation: blink 0.6s ease-in-out infinite, tilt 0.5s linear infinite;
 }
 
 .flckr_2 {
   position: absolute;
-  width: 8.7vw;
-  height: 6.25vw;
+  width: 9vw;
+  height: 6vw;
   margin-top: 15vw;
   margin-left: 55vw;
   animation: blink 0.6s ease-in-out infinite, tilt_2 0.5s linear infinite;
@@ -582,8 +582,8 @@ body {
 
 .flckr_3 {
   position: absolute;
-  width: 6.2vw;
-  height: 8.7vw;
+  width: 6vw;
+  height: 9vw;
   margin-top: 29vw;
   margin-left: 57vw;
   animation: blink 0.6s ease-in-out infinite, tilt 0.5s linear infinite;
@@ -591,25 +591,28 @@ body {
 
 .flckr_4 {
   position: absolute;
-  width: 6.2vw;
-  height: 8.7vw;
+  width: 6vw;
+  height: 9vw;
   margin-top: 30vw;
-  margin-left: 35.8vw;
+  margin-left: 36vw;
   animation: blink 0.6s ease-in-out infinite, tilt_2 0.5s linear infinite;
 }
-
-.flckr_1:hover {
+/* .flckr_1:hover {
+  animation-play-state: paused;
   animation: blink 0.6s ease-in-out infinite, pulse 0.6s ease-in-out infinite;
 }
 .flckr_2:hover {
+  animation-play-state: paused;
   animation: blink 0.6s ease-in-out infinite, pulse 0.6s ease-in-out infinite;
 }
 .flckr_3:hover {
+  animation-play-state: paused;
   animation: blink 0.6s ease-in-out infinite, pulse 0.6s ease-in-out infinite;
 }
 .flckr_4:hover {
+  animation-play-state: paused;
   animation: blink 0.6s ease-in-out infinite, pulse 0.6s ease-in-out infinite;
-}
+} */
 
 @keyframes blink {
   0%,
@@ -639,7 +642,7 @@ body {
     transform: rotate(-5deg);
   }
 }
-@keyframes pulse {
+/* @keyframes pulse {
   0%,
   100% {
     transform: scale(1);
@@ -647,7 +650,7 @@ body {
   50% {
     transform: scale(1.08);
   }
-}
+} */
 
 .stroke {
   position: absolute;
